@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/* ============================
+   Global
+============================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-plus-jakarta);
+  overflow-x: hidden;
+
+  background: #ffffff;
+  color: #0f172a;
+
+  transition:
+    background-color .35s ease,
+    color .35s ease;
+}
+
+/* ============================
+   Dark Mode
+============================ */
+
+.dark body {
+  background: #020617;
+  color: #f8fafc;
+}
+
+/* ============================
+   Selection
+============================ */
+
+::selection {
+  background: #2563eb;
+  color: white;
+}
+
+/* ============================
+   Scrollbar
+============================ */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1d4ed8;
+}
+
+/* ============================
+   Container
+============================ */
+
+.container-custom {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+/* ============================
+   Section
+============================ */
+
+.section {
+  padding: 120px 0;
+}
+
+/* ============================
+   Hero Gradient
+============================ */
+
+.hero-gradient {
+  background:
+    radial-gradient(circle at top left, #60a5fa20, transparent 45%),
+    radial-gradient(circle at bottom right, #22d3ee20, transparent 40%);
+}
+
+/* ============================
+   Glass Effect
+============================ */
+
+.glass {
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  background: rgba(255,255,255,.65);
+
+  border: 1px solid rgba(255,255,255,.20);
+
+  transition: .3s;
+}
+
+.dark .glass {
+  background: rgba(15,23,42,.65);
+  border-color: rgba(255,255,255,.08);
+}
+
+/* ============================
+   Animation
+============================ */
+
+.hover-up {
+  transition: .3s;
+}
+
+.hover-up:hover {
+  transform: translateY(-6px);
+}
+
+.fade {
+  transition: .3s;
+}
