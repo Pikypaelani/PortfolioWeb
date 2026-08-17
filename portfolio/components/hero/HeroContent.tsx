@@ -102,7 +102,7 @@ export default function HeroContent() {
               
               {/* Opsi 1: Versi Bahasa Indonesia */}
               <a
-                href="/cv/Cv-Indo-Fiky.pdf"
+                href="/cv/Resume-Fiky.pdf"
                 download="CV-Piky-Paelani-ID.pdf"
                 onClick={() => setIsCvOpen(false)}
                 className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-blue-50 hover:text-blue-600 dark:text-slate-200 dark:hover:bg-slate-800 dark:hover:text-blue-400"
